@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "root",
-      "database": "tomas",
+      "database": "test",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
@@ -14,10 +14,10 @@
       "dialect": "mysql"
     },
     "production": {
-      "username": "nfacqc17nqu6aajl",
-      "password": "hgiu8j1o753ma6wi",
-      "database": "workout",
-      "host": "icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      "username": "dfoi5kg98q1c3qyu",
+      "password": "n2nxqastmc8wi4vc",
+      "database": "exercise",
+      "host": "ixqxr3ajmyapuwmi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
       "dialect": "mysql",
       "use_env_variable": "JAWSDB_URL"
     }
