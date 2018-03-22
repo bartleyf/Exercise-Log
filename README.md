@@ -8,4 +8,4 @@ The Workout App is a minimalist workout logging application. The application all
 * Sequelize
 * Node
 
-Deployed using Heroku. [Live App](https://the-workout.herokuapp.com/)
+Deployed using Heroku. [Live App](https://exercise-log1.herokuapp.com/)
