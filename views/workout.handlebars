@@ -1,0 +1,120 @@
+<!-- <<<<<<< HEAD -->
+	    <!-- Navigation -->
+
+<!-- ======= -->
+<header class="intro-header" style="background-image:url('/assets/images/dashboard.jpg')">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+								<div class="site-heading">
+										<h1>Profile</h1>
+
+								</div>
+						</div>
+				</div>
+		</div>
+</header>
+
+<div class="container">
+	<div class="wrapper">
+		<div class="row">
+
+
+
+			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="media">
+							<div class="media-body">
+								<h4>
+									<strong>{{user.first_name}} {{user.last_name}}</strong>
+									<a href="/editProfile" class="btn btn-default btn-sm">Profile Settings</a>
+								</h4>
+								<h4>
+								<strong>Email</strong>
+								</h4>
+								<div class="profileSetting">{{user.user_email}}</div>
+								<hr>
+								<h4>
+									<strong>Age</strong>
+								</h4>
+								<div class="profileSetting">{{user.user_age}}</div>
+								<hr>
+								<h4>
+									<strong>Gender</strong>
+								</h4>
+								<div class="profileSetting">{{user.user_gender}}</div>
+								<hr>
+								<h4>
+									<strong>Weight</strong>
+								</h4>
+								<div class="profileSetting">{{user.user_weight}} lb</div>
+								<hr>
+								<h4>
+									<strong>Fitness Goal</strong>
+								</h4>
+								<div class="profileSetting">{{user.fitness_goals}}</div>
+								<hr>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-5 col-sm-12">
+				<div class="panel panel-default">
+					<div class="box-header">
+						<h4>Sample Exercises 	<button type="submit" class=" btn-sm" id="searchBtn"><span class="glyphicon glyphicon-search"></span>Search</button></h4>
+					</div>
+					<div class="box-contents panel-body">
+						<div class="" id="main">
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-5 col-sm-12">
+				<div class="panel panel-default">
+
+
+				{{#if success_msg}}
+					<div class="alert alert-success">{{success_msg}}</div>
+				{{/if}}
+
+
+
+					</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--making ajax call to api here -->
+<script type="text/javascript">
+	$("#searchBtn").on("click", function () {
+		$.get("https://wger.de/api/v2/exercise/?language=2", function (data) {
+			console.log(data);
+			if (data) {
+				console.log(data);
+				console.log("data: ", data.results);
+				var liArray = data.results.map(function (exercise, index) {
+					// console.log("liarray exercise",exercise);
+					return '<div class="panel-group"><div class="panel panel-default"><div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" href="#' + index + '">' + exercise.name + '</a></div><div id="' + index + '" class="panel-collapse collapse">	' + exercise.description + '</div></div></div>'
+				})
+				console.log(liArray);
+				var el = document.querySelector('#main');
+				el.innerHTML = liArray.join('');
+			} else {
+				$("#main").text("Something went wrong. Your data was not found.");
+			}
+		});
+	});
+</script>
+
+	<!--  -->
+<!-- >>>>>>> some styling and adding workout by typing in -->

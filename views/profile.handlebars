@@ -1,0 +1,273 @@
+<header class="intro-header" style="background-image:url('/assets/images/dashboard.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading">
+					<h1>Dashboard</h1>
+					<span class="subheading"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--
+<div class="container">
+	<div class="page-header text-center">
+		<h1><span class="fa fa-anchor"></span>Profile Page</h1>
+	</div>
+	<div class="row"> -->
+
+<!-- LOCAL INFORMATION -->
+<!-- <div class="col-lg-4 col-sm-12">
+			<div class="">
+				<h3><span class="fa fa-user"></span> Profile of :{{user.first_name}}  {{user.last_name}}</h3>
+				<a href="/editProfile" class="btn btn-default btn-sm">Edit profile</a>
+				<p>
+					<strong>id</strong>: {{user.id }}<br>
+          <strong>Information</strong> : {{user.fitness_goals}}<br>
+					<strong>Name</strong>: {{ user.first_name}}   {{ user.last_name}}<br>
+          <strong>Age</strong> : {{user.user_age}}<br>
+          <strong>gender</strong> : {{user.user_gender}}<br>
+          <strong>weight</strong> : {{user.user_weight}}<br>
+          <strong>goals</strong> : {{user.fitness_goals}}<br>
+				</p>
+		  -->
+<div class="container">
+	<div class="row profile">
+
+
+
+
+
+
+
+		<div class="col-lg-3 col-sm-12">
+			<div class="box">
+			</div>
+		</div>
+
+
+		<div class="col-lg-5 col-sm-12">
+			<div class="box panel panel-default">
+				<div class="box-header">
+					<h4>
+						<a href="/workout">{{user.first_name}}'s Week</a>
+					</h4>
+				</div>
+				<div class="box-content panel-body">
+					<ul class="weekdays">
+
+
+					<li class="mondayBlock">
+					<div class="panel-group mondayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									MON
+									<!--<a data-toggle="collapse" href="#collapse1">Monday</a>-->
+								</h4>
+								<hr class="small hrTable hrMonday">
+							</div>
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.monday}}</li>
+									{{/each}}
+								</ul>
+						</div>
+					</div>
+				</li>
+
+				<li class="tuesdayBlock">
+					<div class="panel-group tuesdayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse2">TUE</a>
+								</h4>
+								<hr class="small hrTable hrTuesday">
+							</div>
+							<div id="collapse2" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.tuesday}}</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="wednesdayBlock">
+					<div class="panel-group wednesdayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse3">WED</a>
+								</h4>
+								<hr class="small hrTable hrWednesday">
+							</div>
+							<div id="collapse3" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.wednesday}}</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="thursdayBlock">
+					<div class="panel-group thursdayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse4">THU</a>
+								</h4>
+								<hr class="small hrTable hrThursday">
+							</div>
+							<div id="collapse4" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.thursday}}</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="fridayBlock">
+					<div class="panel-group fridayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse5">FRI</a>
+								</h4>
+								<hr class="small hrTable hrFriday">
+							</div>
+							<div id="collapse5" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.friday}}</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="saturdayBlock">
+					<div class="panel-group saturdayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse6">SAT</a>
+								</h4>
+								<hr class="small hrTable hrSaturday">
+							</div>
+							<div id="collapse6" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">{{this.saturday}}</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="sundayBlock">
+					<div class="panel-group sundayTable">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title weekName">
+									<a data-toggle="collapse" href="#collapse7">SUN</a>
+								</h4>
+								<hr class="small hrTable hrSunday">
+							</div>
+							<div id="collapse7" class="panel-collapse collapse panel-body">
+								<ul class="workoutNames">
+									{{# each workouts}}
+									<li class="ulWeekdayDiv">
+										{{this.sunday}}
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+
+					<div class="box-header">
+						<h4>Add workouts</h4>
+					</div>
+					<div class="box-contents panel-body">
+						<form class="" action="/workout" method="post">
+							<div class="form-group">
+								<div class="form-group">
+									<label>Monday</label>
+									<input type="text" class="form-control" name="monday" value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Tuesday</label>
+									<input type="text" class="form-control" name="tuesday"  value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Wednesday</label>
+									<input type="text" class="form-control" name="wednesday" value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Thursday</label>
+									<input type="text" class="form-control" name="thursday"  value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Friday</label>
+									<input type="text" class="form-control" name="friday"  value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Saturday</label>
+									<input type="text" class="form-control" name="saturday"  value=" ">
+								</div>
+								<hr class="small">
+
+								<div class="form-group">
+									<label>Sunday</label>
+									<input type="text" class="form-control" name="Sunday"  value=" ">
+								</div>
+								<hr class="small">
+
+
+
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+
+
+							</div>
+						</form>
+
+
+					</div>
+
+
+
+				</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>

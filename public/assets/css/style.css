@@ -1,0 +1,288 @@
+.intro-header {
+  margin: 0 !important;
+}
+.verticalNav {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  padding-left: 20px !important;
+}
+.verticalNav :hover{
+  color: #ffffff;
+  opacity: 1;
+}
+.mondayTable {
+  list-style-type: circle !important;
+}
+.tuesdayTable{
+  list-style-type: circle !important;
+}
+.wednesdayTable {
+  list-style-type: circle !important;
+}
+.thursdayTable {
+  list-style-type: circle !important;
+}
+.fridayTable {
+  list-style-type: circle !important;
+}
+.saturdayTable {
+  list-style-type: circle !important;
+}
+.sundayTable {
+  list-style-type: circle !important;
+}
+.borderWeekday {
+  border: 20px !important;
+  border-color: #ffffff !important;
+}
+.picturesMain {
+  width: 600px !important;
+}
+input {
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  padding-bottom: 8px !important;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.dashboardDiv {
+  font-weight: 900 !important;
+}
+.panel-group {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 1 !important;
+  font-weight: bold !important;
+}
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.welcomeBack {
+  padding-left: 20px !important;
+}
+.friendsFeed {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.workoutNames {
+  padding-left: 10px !important;
+}
+button {
+  background:rgb(240, 55, 62);
+  color:#fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding:12px 60px;
+  border:1px solid transparent;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.hrTable {
+  padding: none !important;
+  border-bottom-width: 5px !important;
+  opacity: 1 !important;
+}
+.signUpInput {
+  padding-top: 0px !important;
+}
+.profileSetting{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.navMain {
+  width: 200px !important;
+  margin: 0;
+  position: sticky !important;
+  background-color: rgba(0,0,0,.5) !important;
+  float: left;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  height: 750px !important;
+  overflow: hidden !important;
+}
+.nav-link {
+  color: #ffffff !important;
+}
+.linksNav {
+  font-size: 20px !important;
+}
+.navbar-brand {
+  width: 50px !important;
+}
+.indexPage {
+  padding: 25px;
+  padding-left: 50px !important;
+}
+h1 {
+  margin-top: 0px !important;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+.lineNav {
+  color: #ffffff !important;
+  opacity: 0.5 !important;
+}
+.subheading {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+.copyright {
+  bottom: 100px !important;
+  padding-left: 20px;
+  color: #888888 !important;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.ulWeekdayDiv {
+  list-style-type: none !important;
+  display: table-row !important;
+}
+.navLinks {
+  color: #ffffff !important;
+  opacity: 0.5;
+}
+.bodyContainer {
+  padding-left: 225px !important;
+  padding-top: 25px !important;
+}
+a {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+body {
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90deg,#2c5e92 0,#552f6d 80%);
+}
+hr {
+  color: #ffffff;
+  opacity: 0.5;
+}
+ul {
+  list-style-type: none;
+}
+.albumCovers {
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.titleIndex {
+  text-align: center !important;
+}
+.mondayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #FF0302 !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrMonday {
+  border-color: #FF0302 !important;
+}
+.tuesdayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #0071F5 !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrTuesday {
+  border-color: #0071F5 !important;
+}
+.wednesdayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #FFFC00 !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrWednesday {
+  border-color: #FFFC00 !important;
+}
+.thursdayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #1ED760 !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrThursday {
+  border-color: #1ED760 !important;
+}
+.fridayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #FFFFFF !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrFriday {
+  border-color: #FFFFFF !important;
+}
+.saturdayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #F46899 !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrSaturday {
+  border-color: #F46899 !important;
+}
+.sundayBlock {
+  display: inline-block !important;
+  list-style-position:inside !important;
+  border: 5px solid #9013FE !important;
+  border-radius: 10px !important;
+  height: 500px !important;
+  width: 120px !important;
+  margin-right: 10px !important;
+}
+.hrSunday {
+  border-color: #9013FE !important;
+}
+.weekName {
+  text-align: center !important;
+}

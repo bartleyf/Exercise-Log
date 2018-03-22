@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta charset="UTF-8">
+	<title>Workout App</title>
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	    <!-- Navigation -->
+      <div class = 'navMain'>
+        <a class="navbar-brand" href=""><img src="/assets/workoutAppLogo.png" style='width:100px; padding-top:25px; padding-left: 40px;'></a>
+        <hr class="small lineNav">
+          <div class="linksNav">
+            <ul class = 'nav flex-column verticalNav'>
+			            {{#if user}}
+	                <li>
+	                   <a class="navLinks" href="/dashboard">Feed</a>
+	                </li>
+								  <li>
+									   <a class="navLinks" href="/profile">Dashboard</a>
+								  </li>
+								  <li>
+										 <a class="navLinks" href="/workout">Profile</a>
+									</li>
+	                <li>
+	                   <a class="navLinks" href="/logout">Logout</a>
+	                </li>
+									{{else}}
+									<li>
+									   <a class="navLinks" href="/">Home</a>
+									</li>
+	                <li>
+	                   <a class="navLinks" href="/login">Login</a>
+	                </li>
+	                <li>
+	                   <a class="navLinks" href="/signup">Register</a>
+	                </li>
+									{{/if}}
+	           </ul>
+             <hr class="small lineNav">
+	        </div>
+              <div class="welcomeBack">
+              {{#if user}}
+              <h6>Welcome Back, <a href="/profile">{{user.first_name}} {{user.last_name}}</h6></a>
+              {{/if}}
+              </div>
+              <p class="copyright text-muted">Copyright &copy; The Mariachis 2018</p>
+              <div class="box-header">
+    					</div>
+          <footer>
+					</footer>
+        </div>
+
+        <div class="bodyContainer">
+          {{{body}}}
+        </div>
+
+
+          <script src="/js/jquery.min.js"></script>
+          <script src="/js/bootstrap.min.js"></script>
+          <script src="/js/clean-blog.min.js"></script>
+
+
+
+
+
+
+
+	</body>
+</html>
